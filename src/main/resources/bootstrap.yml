@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: ${HOSTNAME}
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://${HOSTNAME}:8888}
